@@ -117,6 +117,7 @@ public class UpdatesActivity extends UpdatesListActivity implements UpdateImport
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_updates);
+        Toast.makeText(this, "Always check changelogs before updating!", Toast.LENGTH_LONG).show();
 
         mUpdateImporter = new UpdateImporter(this, this);
 
